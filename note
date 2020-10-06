@@ -1,0 +1,6 @@
+[tutorial menjalankan aplikasi ini]
+1. lakukan migration data
+2. lakukan DB:seed untuk mengisi data pada tabel yang ditentukan
+3. download file pentaho pada penelitian "analisis dan implementasi algoritma sinkronisasi" kemudian simpan ke direcori yang diinginkan
+4. setting pada InsUpdController hilangkan tanda komen dan atur tempat simpan file penntaho
+5. jalankan laravel dengan php artisan serve

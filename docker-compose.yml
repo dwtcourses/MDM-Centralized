@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+
+  mysql-mdm:
+    image: mysql:8.0.2
+    environment: 
+      MYSQL_ROOT_PASSWORD: mdmrepo
+      MYSQL_DATABASE: master_data_repo
+    ports:
+      - "3310:3306"
+
+  mysql-asrot:
+    image: mysql:8.0.2
+    environment:
+      MYSQL_ROOT_PASSWORD: asrot
+      MYSQL_DATABASE: asrot_apps
+    ports:
+      - "3307:3306"
+
+  mysql-ereg:
+    image: mysql:8.0.2
+    environment:
+      MYSQL_ROOT_PASSWORD: ereg
+      MYSQL_DATABASE: ereg_apps
+    ports:
+      - "3308:3306"
+
+  mysql-etrack:
+    image: mysql:8.0.2
+    environment:
+      MYSQL_ROOT_PASSWORD: etrack
+      MYSQL_DATABASE: etrack_apps
+    ports:
+      - "3309:3306"
